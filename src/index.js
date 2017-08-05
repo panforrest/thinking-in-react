@@ -2,11 +2,26 @@ import React from 'react';
 import './index.css'
 import ReactDOM from 'react-dom'
 
+class SearchBar extends React.Component {
+  render(){
+    return(
+      <form>
+        <input type="text" placeholder='Search...' />
+        <p>
+          <input type="checkBox" />
+          {' '}
+          Only show products in stock
+        </p>
+      </form>
+    )
+  }
+}
+
 class FilterableProductTable extends React.Component{
   render(){
     return(
       <div>
-        This is FilterableProducts.
+        <SearchBar />
       </div>
     )
   }
